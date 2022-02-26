@@ -39,4 +39,4 @@ Yes , its fully customisable and there are certain settings which you may furthe
 # Read more about on hashnode's blog post 
 
 
-Link here: []()
+Link here: [https://abhiprojectz.hashnode.dev/introducing-hashcss-powerful-one-stops-place-for-css-needs](https://abhiprojectz.hashnode.dev/introducing-hashcss-powerful-one-stops-place-for-css-needs)
