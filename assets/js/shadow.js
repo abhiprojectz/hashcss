@@ -12,9 +12,7 @@ document.querySelector("#vertical").addEventListener("input", () => {
 document.querySelector("#ex").addEventListener("input", () => {
 	update();
 })
-document.querySelector("#inset-value").addEventListener("input", () => {
-	update();
-})
+
 
 // Generating random values 
 document.querySelector("#random").onclick = () => {
@@ -38,20 +36,14 @@ function update() {
 	var spread = document.getElementById("ex").value;
 	var color = document.getElementById("color").value;
 
-	// Checks if the inset checbox is checked to then we may apply the inset
-	if (document.querySelector('#inset-value').checked) {
-		var output = "box-shadow: " + "inset " + horizontal + "px " + vertical + "px " + blur + "px " + spread + "px " + color + ";";
-	} else {
-		var output = "box-shadow: " + horizontal + "px " + vertical + "px " + blur + "px " + spread + "px " + color + ";";
-	}
+	var output = "box-shadow: " + horizontal + "px " + vertical + "px " + blur + "px " + spread + "px " + color + ";";
+	
 
 	// document.querySelector('#colorval').textContent = color;
 	// document.querySelector('#data').value = output;
 
 	// Setting the box css styles
-	if (document.querySelector('#inset-value').checked) {
-		document.querySelector('#disbox').style.boxShadow = 'inset' + horizontal + 'px ' + vertical + 'px ' + blur + 'px ' + spread + 'px ' + color;
-	} else {
+	
 		document.querySelector('#disbox').style.boxShadow = horizontal + 'px ' + vertical + 'px ' + blur + 'px ' + spread + 'px ' + color;
-	}
+	
 }
